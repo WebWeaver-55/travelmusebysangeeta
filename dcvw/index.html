@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sangeeta Adventures - Travel Blog & Stories</title>
+    <meta
+      name="description"
+      content="Join me on incredible travel adventures around the world. Discover hidden gems, travel tips, and unforgettable experiences from every corner of the globe."
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-content">
+        <div class="loading-logo">
+          <i class="fas fa-globe-americas"></i>
+        </div>
+        <div class="loading-text">TRAVEL MUSE</div>
+        <div class="loading-bar">
+          <div class="loading-progress"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <div class="nav-wrapper">
+          <!-- Logo -->
+          <div class="logo">
+            <div class="logo-icon">
+              <img
+                id="logoImage"
+                src="/placeholder.svg?height=45&width=45"
+                alt="Sangeeta Logo"
+                style="
+                  width: 45px;
+                  height: 45px;
+                  border-radius: 50%;
+                  object-fit: cover;
+                  display: none;
+                "
+              />
+              <i class="fas fa-compass" id="logoIcon"></i>
+            </div>
+            <span class="logo-text">Travel Muse</span>
+            <input
+              type="file"
+              id="logoUpload"
+              accept="image/*"
+              style="display: none"
+            />
+           
+          </div>
+
+          <!-- Desktop Navigation -->
+          <nav class="nav-desktop">
+            <a href="#home" class="nav-link">Home</a>
+            <a href="#about" class="nav-link">About</a>
+            <a href="#destinations" class="nav-link">Destinations</a>
+            <a href="#videos" class="nav-link">Videos</a>
+            <a href="#gallery" class="nav-link">Gallery</a>
+            <a href="#contact" class="nav-link">Contact</a>
+          </nav>
+
+          <!-- Social Icons -->
+          <div class="header-actions">
+            <a href="https://instagram.com/ssangeeta28" target="_blank" class="social-link">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://www.youtube.com/@travelmusebysangeeta" target="_blank" class="social-link">
+              <i class="fab fa-youtube"></i>
+            </a>
+            <a href="https://facebook.com/sangeeta.singh.35912" target="_blank" class="social-link">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </div>
+
+          <!-- Mobile menu button -->
+          <button class="mobile-menu-btn" id="mobileMenuBtn">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div class="nav-mobile" id="mobileNav">
+          <nav class="mobile-nav-links">
+            <a href="#home" class="mobile-nav-link">Home</a>
+            <a href="#about" class="mobile-nav-link">About</a>
+            <a href="#destinations" class="mobile-nav-link">Destinations</a>
+            <a href="#videos" class="mobile-nav-link">Videos</a>
+            <a href="#gallery" class="mobile-nav-link">Gallery</a>
+            <a href="#contact" class="mobile-nav-link">Contact</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-slider">
+        <div class="hero-slide active">
+          <div
+            class="hero-bg"
+            style="
+              background-image: url('img2.png');
+            "
+          ></div>
+        </div>
+        <div class="hero-slide">
+          <div
+            class="hero-bg"
+            style="
+              background-image: url('img3.png');
+            "
+          ></div>
+        </div>
+        <div class="hero-slide">
+          <div
+            class="hero-bg"
+            style="
+              background-image: url('img4.png');
+            "
+          ></div>
+        </div>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            <span class="title-line">Explore</span>
+            <span class="title-line">Dream</span>
+            <span class="title-line">Discover</span>
+          </h1>
+          <p class="hero-subtitle">
+            Join me on incredible journeys around the world as I explore hidden
+            gems, share travel stories, and inspire your next adventure.
+          </p>
+        </div>
+<a href="#destinations">
+        <div class="hero-buttons">
+          <button  class="btn btn-primary">
+            <i class="fas fa-map-marked-alt"></i>
+            Explore Destinations
+          </button>
+
+         <a href="https://www.youtube.com/@travelmusebysangeeta" target="_blank">
+  <button class="btn btn-secondary">
+    <i class="fas fa-play"></i>
+    Watch Travel Videos
+  </button>
+</a>
+
+        </div>
+      </div>
+
+      <!-- Scroll Indicator -->
+      <div class="scroll-indicator">
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+        <span class="scroll-text">Scroll to explore</span>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image">
+            <div class="image-wrapper">
+              <img
+                src="img1.png"
+                alt="Travel Blogger"
+              />
+              <div class="image-overlay">
+                <div class="play-button">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-content">
+            <div class="section-tag">About Me</div>
+            <h2 class="about-title">Hi, I'm Sangeeta</h2>
+            <p class="about-text">
+              ✨ Meet Sangeeta – The Travel Muse! Welcome to Travel Muse by
+              Sangeeta – where age is just a number and adventure is a way of
+              life! Sangeeta is not your typical grandma. She's a spirited
+              globetrotter, a passionate home cook, a skincare enthusiast, and
+              the heart of her big, loving family.
+            </p>
+            <p class="about-text">
+              From exploring hidden gems across the world to sharing heartfelt
+              family moments and timeless recipes, Sangeeta brings a fresh,
+              joyful perspective to life after 60.
+            </p>
+
+            <div class="stats-container">
+              <div class="stat-item">
+                <div class="stat-number">15+</div>
+                <div class="stat-label">Countries Visited</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">1M+</div>
+                <div class="stat-label">YouTube Views</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">10K+</div>
+                <div class="stat-label">Followers</div>
+              </div>
+            </div>
+
+            <button class="about-btn">
+              <i class="fas fa-heart"></i>
+              Follow My Journey
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest Videos Section -->
+    <section id="videos" class="latest-videos">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Latest Adventures</div>
+          <h2 class="section-title">Recent Travel Videos</h2>
+          <p class="section-description">
+            Watch my latest travel adventures and get inspired for your next
+            trip
+          </p>
+        </div>
+
+        <div class="videos-grid">
+          <div
+            class="video-card"
+            onclick="openVideo('https://www.youtube.com/watch?v=ScMzIvxBSi4https://youtu.be/1onrfTwAzmg?si=6CRjZookb-Al2RYm')"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="img8.png"
+                alt="Bali Adventure"
+              />
+              <div class="video-overlay">
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="video-duration">23:45</div>
+            </div>
+            <div class="video-content">
+              <h3 class="video-title">Vrindavan Travel Vlog</h3>
+              <p class="video-description">
+               Hi, my name is Sangeeta - I talk about self-care and like to travel a lot. I like to share self-care and tips to take care of your skin.
+              </p>
+              <div class="video-meta">
+                <span class="video-views">200 views</span>
+                <span class="video-date">1 month ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="video-card"
+            onclick="openVideo('https://youtu.be/1EBoE4aelJE?si=jif2nyQBGqeOltZ0')"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="img7.png"
+                alt="Swiss Alps"
+              />
+              <div class="video-overlay">
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="video-duration">34:40</div>
+            </div>
+            <div class="video-content">
+              <h3 class="video-title">THINGS YOU SHOULD NOT DO DUSTING CAMPING</h3>
+              <p class="video-description">
+               Solo Girl Camping in Forest | Uttarakhand Camping, Cooking & Hiking in Nature 2025
+Welcome to my latest adventure — a solo camping in forest experience like no other! Set in the serene wilderness of Uttarakhand, this video captures the essence of camping in forest, facing the elements with courage, warmth, and curiosity.
+              </p>
+              <div class="video-meta">
+                <span class="video-views">450 views</span>
+                <span class="video-date">3 month ago</span>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="video-card"
+            onclick="openVideo('https://youtu.be/cE7aTDeLhxU?si=hRpqxNS-926uTupw')"
+          >
+            <div class="video-thumbnail">
+              <img
+                src="img6.png"
+                alt="Morocco Adventure"
+              />
+              <div class="video-overlay">
+                <div class="play-btn">
+                  <i class="fas fa-play"></i>
+                </div>
+              </div>
+              <div class="video-duration">18:45</div>
+            </div>
+            <div class="video-content">
+              <h3 class="video-title">WORLD'S BIGGEST FLOATING SLUM</h3>
+              <p class="video-description">
+               Step into the heart of Makoko Lagos, a place famously known as the Venice of Africa, yet home to countless challenges. In this vlog, we explore the Makoko floating slum Lagos, uncovering its hidden dangers and showcasing the incredible resilience of its people. From the iconic Makoko stilt houses Lagos, which stand precariously above water, to the daily struggles of its residents, this is a story of survival and community.
+              </p>
+              <div class="video-meta">
+                <span class="video-views">500 views</span>
+                <span class="video-date">5 months ago</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Explore</div>
+          <h2 class="section-title">Featured Destinations</h2>
+          <p class="section-description">
+            Discover amazing places from my travels around the world
+          </p>
+        </div>
+
+        <div class="destinations-grid">
+          <div class="destination-card">
+            <div class="destination-image">
+              <img
+                src="img10.png"
+                alt="Tropical Paradise"
+              />
+              <div class="destination-overlay">
+                <div class="destination-info">
+                  <h3 class="destination-name">Banaras, India</h3>
+                  <p class="destination-desc">Tropical Paradise</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <div class="destination-image">
+              <img
+                src="img11.png"
+                alt="Mountain Adventure"
+              />
+              <div class="destination-overlay">
+                <div class="destination-info">
+                  <h3 class="destination-name">Langkawi, Malaysia</h3>
+                  <p class="destination-desc">Mountain Adventure</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <div class="destination-image">
+              <img
+                src="img12.png"
+                alt="Cultural Journey"
+              />
+              <div class="destination-overlay">
+                <div class="destination-info">
+                  <h3 class="destination-name">Azarbaijaan</h3>
+                  <p class="destination-desc">Former Soviet</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="destination-card">
+            <div class="destination-image">
+              <img
+                src="img9.png"
+                alt="Urban Explorer"
+              />
+              <div class="destination-overlay">
+                <div class="destination-info">
+                  <h3 class="destination-name">Paris</h3>
+                  <p class="destination-desc">Urban Explorer</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Travel Gallery Section (Replacing Blog) -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="section-header">
+          <div class="section-tag">Memories</div>
+          <h2 class="section-title">Travel Gallery</h2>
+          <p class="section-description">
+            A collection of breathtaking moments from my adventures around the
+            world
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img
+              src="img20.png"
+              alt="Mountain Lake"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="img19.png"
+              alt="Ancient Architecture"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+                
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="img14.png"
+              alt="Tropical Beach"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="img15.png"
+              alt="City Lights"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+              
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="img17.png"
+              alt="Desert Sunset"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-item">
+            <img
+              src="img18.png"
+              alt="Mountain Peak"
+            />
+            <div class="gallery-overlay">
+              <div class="gallery-info">
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="contact-content">
+          <div class="section-tag">Get in Touch</div>
+          <h2 class="contact-title">Let's Connect</h2>
+          <p class="contact-description">
+            Have questions about travel or want to collaborate? I'd love to hear
+            from you!
+          </p>
+
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>saangeeta1977@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Based in</h4>
+                <p>Bihar , India</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="https://instagram.com/ssangeeta28" target="_blank" class="social-btn">
+              <i class="fab fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://www.youtube.com/@travelmusebysangeeta" target="_blank" class="social-btn">
+              <i class="fab fa-youtube"></i>
+              <span>YouTube</span>
+            </a>
+            <a href="https://facebook.com/sangeeta.singh.35912"  target="_blank" class="social-btn">
+              <i class="fab fa-facebook"></i>
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <div class="logo-icon">
+              <i class="fas fa-compass"></i>
+            </div>
+            <span class="logo-text">Travel Muse</span>
+          </div>
+          <p class="footer-text">
+            © 2025 Sangeeta Adventures. Made with ❤️ for travel lovers
+            worldwide.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
